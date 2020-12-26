@@ -89,7 +89,3 @@ from film join film_category using (film_id) join category using (category_id)
 group by category.name
 having avg(length) > (select avg(length) from film)
 order by avg(length) desc;
-
-\! echo Why does this query return the empty set?
-
-select * from film natural join inventory;
