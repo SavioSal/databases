@@ -1,0 +1,28 @@
+Create database named LIBRARY. The properties of the tables are defined as follows:
+ MEMBERS table
+- CardNo - 5 characters, primary key,
+- Surname - up to 15 characters,
+- Name – as above,
+- Address –up to 150 characters,
+- Name, Surname, Birthday_date – not null,
+- Gender - 1 char: M or F letter,
+- Phone_No – up to 15 characters.
+ Employees table
+- emp_id - primery key (increment=1) ,
+- Surname, Name and Birthday_date are not null,
+ Publishers table
+- pub_id is a primary key (increment=1),
+- Name, City, - not null, up to 50 characters,
+- Phone_No - up to 15 characters,
+ Books table
+- BookID - primary key, 5 characters,
+- Pub_ID - foreign key related to Publishers,
+- Type - characters, must contain one of the following values: novel, historical, for kids, poems, crime
+story, science fiction, science
+- Price is a currency field (money), not null,
+- Title - up to 40 characters, not null,
+ BOOK_LOANS table
+- LoanID - integer (increment = 1), primary key,
+- CardNo, BookID and emp_id are foreign keys related to Members, Books and Employees,
+- DateOut,
+- Penalty can't contain negative values, default is set to 0 (zero)
