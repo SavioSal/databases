@@ -1,0 +1,10 @@
+Create COMPANY database ERD to illustrate the concepts of Entity Relationship Model. 
+This database will contain the information about employees, departments and projects:
+
+There are several departments in the company. 
+Each department has an unique identification, a name, location of the office and a particular employee who manages the department.
+A department controls a number of projects, each of which has unique name, a unique number and the budget.
+Each employee has name, an identification number, address, salary, birthdate. 
+An employee is assigned to one department but can join in several projects. 
+We need to record the start date of the employee in each project. We also need to know the direct supervisor of each employee.
+We want to keep track of the dependents of the employees. Each dependent has name, birthdate and relationship with the employee.
